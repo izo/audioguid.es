@@ -1,7 +1,7 @@
 [(#REM)
 	Head standard de toutes les pages ;
 	les elements specifiques (title, description) figurent dans chaque squelette
- 
+
 ]
 <meta http-equiv="Content-Type" content="text/html; charset=#CHARSET" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,11 +9,11 @@
 [(#REM) Lien vers le flux RSS du site ]
 [<link rel="alternate" type="application/rss+xml" title="<:syndiquer_site:>" href="(#URL_PAGE{backend})" />]
 
-[(#REM) 
-      On appelle les feuilles de style 
-      dans l'ordre de la methode daisy http://daisy.tetue.net/img/daisy-nomenclature.png   
+[(#REM)
+      On appelle les feuilles de style
+      dans l'ordre de la methode daisy http://daisy.tetue.net/img/daisy-nomenclature.png
 
-      1. Base CSS http://tinytypo.tetue.net/ ]   
+      1. Base CSS http://tinytypo.tetue.net/ ]
 [<link rel="stylesheet" href="(#CHEMIN{css/reset.css}|direction_css|timestamp)" type="text/css" />]
 [<link rel="stylesheet" href="(#CHEMIN{css/clear.css}|direction_css|timestamp)" type="text/css" />]
 [<link rel="stylesheet" href="(#CHEMIN{css/font.css}|direction_css|timestamp)" type="text/css" />]
@@ -52,3 +52,8 @@
 
 [(#REM) meta robots ]
 [<meta name="robots" content="(#ENV{robots})" />]
+
+<link rel="apple-touch-icon" sizes="180x180" href="#CHEMIN{img/apple-touch-icon.png}">
+<link rel="icon" type="image/png" sizes="32x32" href="#CHEMIN{img/favicon-32x32.png}">
+<link rel="icon" type="image/png" sizes="16x16" href="#CHEMIN{img/favicon-16x16.png}">
+<link rel="manifest" href="#CHEMIN{img/site.webmanifest}">

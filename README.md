@@ -7,10 +7,10 @@
   </a>
 </div>
 
-<h3 align="center">audioguide.es</h3>
+<h3 align="center">audioguid.es</h3>
 
-<p>Audioguid.es est un ensemble d’objets photographiques s’intéressant à la fois à la mémoire des territoires et des habitants. </p>
-<p>Entre le guide audio et la capsule temporelle, Audioguid.es capture la mémoire, l’état d’esprit des personnes vivant ou travaillant dans le quartier de la Goutte d’Or à Paris pendant l’été 2022.  </p>
+<p>audioguid.es est un ensemble d’objets photographiques s’intéressant à la fois à la mémoire des territoires et des habitants. </p>
+<p>Entre le guide audio et la capsule temporelle, audioguid.es capture la mémoire, l’état d’esprit des personnes vivant ou travaillant dans le quartier de la Goutte d’Or à Paris pendant l’été 2022.  </p>
 
 
 

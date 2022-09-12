@@ -1,0 +1,8 @@
+<footer class="footer clearfix invert" role="contentinfo">
+	<ul><li>[(#LOGO_SITE_SPIP|image_reduire{25,25})]</li>
+	<li class="colophon">
+		<BOUCLE_annee(ARTICLES){par date}{0,1}>[(#DATE|annee|!={#VAL{Y}|date}|oui)[(#DATE|annee)]]</BOUCLE_annee> - </B_annee>[(#DATE|annee) ]- #NOM_SITE_SPIP - <a href="https://www.mathieu-drouet.com" title="projet réalisé par Mathieu Drouet" © Mathieu Drouet</a>
+	</li>
+	<li>[(#LOGO_SITE_SPIP|image_reduire{25,25})]</li>
+
+</footer>

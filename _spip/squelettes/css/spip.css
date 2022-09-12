@@ -1,0 +1,212 @@
+/* --------------------------------------------------------------
+
+   spip.css
+   Styles associes au code genere par SPIP
+
+
+-------------------------------------------------------------- */
+
+/* Neutraliser conflit spip / tinytypo */
+ul, ol {list-style:none;margin-left:0;}
+s, strike,del, .del { opacity:1;}
+
+/* puce */
+.spip-puce b {display:none;}
+.spip-puce {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.4em;
+	line-height: 0.7;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.spip-puce:before {
+	content: "\203A";
+}
+
+
+/* Listes SPIP */
+ul.spip,
+ol.spip { margin-left: 50px; }
+@media (max-width: 640px) {
+	ul.spip,
+	ol.spip { margin-left: 1.5em; }
+}
+ul.spip { list-style-type: square; }
+li ul.spip { list-style-type: disc; }
+li li ul.spip { list-style-type: circle; }
+ol.spip { list-style-type: decimal; }
+
+dl.spip dt,
+dl.spip dd { padding-left: 50px; }
+dl.spip dt { clear: both; }
+dl.spip dd {}
+
+/* Tableaux SPIP */
+table.spip { width: 100%; }
+table.spip caption {}
+table.spip tr.row_first th {}
+table.spip tr.odd td {}
+table.spip tr.even td {}
+
+/* en responsive,  lineariser le tableau pour eviter les scrolls*/
+@media (max-width: 640px) {
+	table.spip th, table.spip tr, table.spip td {
+		display:block;
+	}
+	table.spip thead th {
+		border-bottom:none !important;
+	}
+	table.spip thead th+th {
+		border-top:none;
+	}
+	table.spip tr {
+		border-bottom: 1px solid;
+	}
+	table.spip td {
+		border-bottom:none;
+	}
+}
+
+/* Citations, code et poesie */
+pre, code, kbd, samp, var, tt, .spip_code, .spip_cadre { font-family: 'Courier New', Courier, monospace; }
+div.spip_code, .spip_cadre {}
+
+
+/* Logos, documents et images */
+.spip_logo { float:right; margin: 0 0 10px 10px; padding:0; border: none; }
+
+.spip_logo { margin: 0 0 10px 10px; padding: 0; border: none; }
+.spip_logo_center { clear: both; display: block; margin: 0 auto 1.5em auto; }
+.spip_logo_left { float: left; margin-right: 1.5em; margin-bottom: 1.5em; }
+.spip_logo_right { float: right; margin-left: 1.5em; margin-bottom: 1.5em; }
+.spip_documents { margin-bottom: 1.5em; padding: 0; background: none; max-width: 100%; }
+.spip_documents,
+.spip_documents_center,
+.spip_doc_titre,
+.spip_doc_descriptif,
+.spip_doc_credits { margin-right: auto; margin-left: auto; text-align: center; min-width: 120px; }
+.spip_documents_center { clear: both; display: block; width: 100%; }
+.spip_documents_left { float: left; margin-right: 1.5em; max-width: 33%; }
+.spip_documents_right { float: right; margin-left: 1.5em; max-width: 33%; }
+.spip_doc_titre {}
+.spip_doc_descriptif { clear: both; }
+.spip_doc_credits { font-style: italic; clear: both; }
+.spip_documents>a { display: inline-block; }
+.spip_documents table { text-align: left; }
+table.spip .spip_document_image {width: auto !important;}
+
+/* Adaptation aux nouveaux modeles document SPIP 4.0 */
+.spip_document { display: flex; justify-content: center;align-items: center}
+.spip_doc_inner{ margin:0 auto;text-align: center;max-width: 100%;}
+.spip_doc_inner>* {margin-left: auto;margin-right: auto;}
+.spip_document .spip_doc_lien { display: inline-block; }
+.spip_doc_legende { display: block; max-width: 25em; }
+.spip_document img,.spip_document svg { max-width: 100%; height: auto; }
+
+/* Fin adaptation */
+
+@media (max-width: 480px) {
+	.spip_documents_left, .spip_documents_right { float: none; margin-left: auto; margin-right: auto; max-width:100%; }
+}
+
+/* Modeles par defaut */
+.spip_modele { float: right; display: block; width: 25%; margin: 0 0 1.5em 1.5em; padding: 1.5em; background-color: #EEE; }
+
+/* Formulaires */
+.formulaire_spip fieldset { margin: 3em 0 0; padding:1em 0; }
+.formulaire_spip fieldset fieldset { margin-left: 1em; }
+.formulaire_spip label { padding: 4px 0; font-size: 120%; font-weight: 700; }
+.formulaire_spip  h3.legend, .formulaire_spip  legend.legend { font-size: 140%; line-height: 135%; font-weight: bold; padding-bottom: 0.2em; border-bottom: 1px solid #CCCCCC;}
+.formulaire_spip .editer,
+.formulaire_spip .choix { clear: both; padding: 0.3em 0; }
+.formulaire_spip .editer { margin:0.7em 0; }
+.formulaire_spip .saisie_radio input, 
+.formulaire_spip .saisie_radio label,
+.formulaire_spip .saisie_checkbox input,
+.formulaire_spip .saisie_checkbox label,
+.formulaire_spip .saisie_case input,
+.formulaire_spip .saisie_case label,
+.formulaire_spip .saisie_oui_non input,
+.formulaire_spip .saisie_oui_non label,
+.formulaire_spip .saisie_mot input,
+.formulaire_spip .saisie_mot label { display: inline-block; }
+.formulaire_spip .saisie_input label, .choix label { cursor: pointer; }
+.formulaire_spip .explication { font-style: italic; }
+.formulaire_spip .explication p { margin: 0; }
+.formulaire_spip p.explication { font-size: 90%; margin-bottom: 0.5em; }
+.formulaire_spip .choix label { font-size: 100%; font-weight: normal; padding: 0; }
+.formulaire_spip .choix.choix_alternatif:after { content: ''; clear: both; display: block; }
+.formulaire_spip .choix.choix_alternatif label { float: left; width: 20%; text-align: right; }
+.formulaire_spip .choix.choix_alternatif input { float: right; width: 78%; }
+.formulaire_spip .browser .frame { display: inline-block; vertical-align: top; width: 32%; min-width: 170px; border: solid 1px #aaa; background-color: #F7F7F7; padding:0.2em; margin-bottom:1em; }
+.formulaire_spip ul.item_picked { margin:0; }
+.formulaire_spip ul.item_picked li { display: inline-block; padding:0 0.2em; background-color:#F7F7F7; border: solid 1px #aaa; margin-right:0.2em; margin-bottom:0.2em; }
+.formulaire_spip ul.item_picked li span.sep { display: none; }
+.formulaire_spip .picker_bouton { text-align: right; }
+.formulaire_spip .boutons { clear: both; margin: 0; padding: 0; text-align: right; }
+
+
+@media print {
+	.formulaire_spip { display: none; }
+}
+
+/* Barre typo */
+.markItUp .markItUpHeader ul .markItUpSeparator { display: none; }
+
+/* Previsu */
+.formulaire_spip .previsu { margin-bottom: 1.5em; padding: 0.75em; border: 2px dashed #F57900; }
+fieldset.previsu legend { color: #F57900; }
+
+/* Reponses */
+.reponse_formulaire { margin-bottom: 1.5em; padding: 0.75em; border: 2px solid #ddd; }
+.reponse_formulaire_ok { background: #e6efc2; color: #264409; border-color: #c6d880; }
+.reponse_formulaire_erreur { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+.reponse_formulaire_ok a { color: #264409; }
+.reponse_formulaire_erreur a { color: #8a1f11; }
+
+.erreur_message { color: red; }
+
+.editer.erreur input[type="text"], .editer.erreur input.text,
+.editer.erreur input[type="password"], .editer.erreur input.password,
+.editer.erreur textarea,
+li.erreur input[type="text"], li.erreur input.text,
+li.erreur input[type="password"], li.erreur input.password,
+li.erreur textarea { background-color: #fbe3e4; border-color: #fbc2c4; }
+
+.spip_surligne { background-color: yellow; }
+
+/* Formulaire de recherche */
+.formulaire_recherche * { display: inline; }
+
+/* Paragraphes */
+div.spip, ul.spip, ol.spip, .spip_poesie, .spip_cadre, div.spip_code, .spip_documents.spip_documents_center { margin-bottom: 1.5em; }
+
+/* Pagination */
+.pagination { clear: both; text-align: center; }
+@media print {
+	.pagination { display: none; }
+}
+
+/* Liens de SPIP */
+a.spip_note { font-weight: bold; } /* liens vers notes de bas de page */
+a.spip_in {} /* liens internes */
+a.spip_mail {}
+a.spip_out {} /* liens sortants */
+a.spip_url {} /* liens url sortants */
+a.spip_glossaire {} /* liens vers encyclopedie */
+
+
+/* Compatibilite ancienne dist */
+.on {font-weight:bold;}
+
+/* Boutons d'admin */
+@media print {
+	.spip-admin,
+	#spip-admin { display: none; }
+}
+
+/* fin */

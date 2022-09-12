@@ -1,0 +1,9 @@
+<B_nav>
+<nav class="nav clearfix[ (#TOTAL_BOUCLE|=={1}|oui)none]" id="nav" role="navigation">
+	<ul>
+		<BOUCLE_nav(RUBRIQUES) {racine} {par num titre, titre}>
+		<li class="nav-item[ (#EXPOSE)][ (#COMPTEUR_BOUCLE|=={1}|oui)first][ (#COMPTEUR_BOUCLE|=={#TOTAL_BOUCLE}|oui)last]"><a href="#URL_RUBRIQUE">#TITRE</a></li>
+		</BOUCLE_nav>
+	</ul>
+</nav>
+</B_nav>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="#LANG_DIR" lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js">
+<head>
+	<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);/*]]>*/</script>
+	<title>[(#NOM_SITE_SPIP|textebrut)][ - (#SLOGAN_SITE_SPIP|textebrut)]</title>
+	[<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{150}|attribut_html)" />]
+	<INCLURE{fond=inclure/head} />
+</head>
+
+<body class="pas_surlignable page_sommaire">
+<div class="page">
+
+	<INCLURE{fond=inclure/header,home=oui} />
+	<INCLURE{fond=inclure/nav,env} />
+
+	<main class="main" role="main">
+		<div class="wrapper hfeed">
+		<div class="content" id="content">
+			[<div class="chapo">(#DESCRIPTIF_SITE_SPIP)</div>]
+			<INCLURE{fond=inclure/tapes,env,ajax} />
+		</div><!--.content-->
+		</div><!--.wrapper-->
+
+	</main><!--.main-->
+
+	<INCLURE{fond=inclure/footer,self=#SELF} />
+
+</div><!--.page-->
+</body>
+</html>

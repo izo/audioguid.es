@@ -1,0 +1,19 @@
+<B_articles>
+<div class="menu menu_articles" id="articles_recents">
+	<ul>
+		<BOUCLE_articles(ARTICLES) {par num titre} >
+		<li dir="#LANG_DIR" class="hentry clearfix text-#LANG_LEFT">
+
+			<h3 class="h2 entry-title invert tape">
+				<a href="#URL_ARTICLE" rel="bookmark">
+					<span class="rang">#RANG</span>
+					<span class="slogan">#SLOGAN_SITE_SPIP</span>
+					<span class="nom">#NOM_SITE_SPIP</span>
+					<span class="titre">#TITRE</span>
+				</a>
+			</h3>
+		</li>
+		</BOUCLE_articles>
+	</ul>
+</div><!--#articles_recents-->
+</B_articles>

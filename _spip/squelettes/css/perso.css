@@ -1,0 +1,98 @@
+/* @override 
+	https://audioguid.es/squelettes/css/perso.css?* */
+
+body {
+	font-family: ui-monospace,Menlo,Monaco,"Cascadia Mono","Segoe UI Mono","Roboto Mono","Oxygen Mono","Ubuntu Monospace","Source Code Pro","Fira Mono","Droid Sans Mono","Courier New",monospace;
+	color: #cc002a;
+	background: #F3F2ED;
+}
+
+.page {
+	margin-top: 100px;
+}
+
+
+.header {
+}
+
+
+body.pas_surlignable.page_sommaire div.page header.clearfix.header {
+}	  
+
+
+
+
+
+.chapo {
+	font-weight: : normal !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.wrapper {
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+h1.spip_logo_site {
+	color: #cc002a !important;
+	text-transform: lowercase;
+	font-weight: normal !important;
+	font-style: normal !important;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left: 5px solid #cc002a;
+	border-right: 5px solid #cc002a;
+	text-align: center;
+	width: 30%;
+	margin-left: 250px;
+	display: block;
+	float: left;
+}
+
+#slogan {
+	font-size: small;
+	display: inline-block;
+	float: left;
+	display: block;
+	text-align: right!important;
+	padding-right: 20px;
+	width: 150px;
+}
+
+.footer {
+	padding: 1em !important;
+	margin-top: 1em !important;
+	text-align: center;
+}
+
+.tape {
+	padding: 1em !important;
+	margin-top: 1em !important;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	box-shadow: 2px 2px 2px #d5d5d5;
+}
+
+.tape a {
+	color: #fcfbf8 !important;
+	background: #cc002a !important;
+	padding-left: 1em !important;
+}
+
+.rang span {
+	transform: rotate(90deg) !important;
+	padding: 0, 5em !important;
+	display: inline-block !important;
+	text-decoration: underline !important;
+	text-underline-offset: 0.2em !important;
+}
+
+.invert {
+	color: #fcfbf8 !important;
+	background: #cc002a !important;
+}

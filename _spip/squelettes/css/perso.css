@@ -1,9 +1,9 @@
-/* @override 
+/* @override
 	https://audioguid.es/squelettes/css/perso.css?* */
 
 body {
 	font-family: ui-monospace,Menlo,Monaco,"Cascadia Mono","Segoe UI Mono","Roboto Mono","Oxygen Mono","Ubuntu Monospace","Source Code Pro","Fira Mono","Droid Sans Mono","Courier New",monospace;
-	color: #cc002a;
+	color:  #cc002a;
 	background: #F3F2ED;
 }
 
@@ -11,17 +11,85 @@ body {
 	margin-top: 100px;
 }
 
-
-.header {
+.bandcamp {
+	text-align: center !important;
+	color: #F3F2ED;
+	background: #cc002a;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px outset white;
 }
 
 
+.footer {
+	text-align: center !important;
+	color: #F3F2ED;
+	background: #cc002a;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px outset white;
+}
+
+a.footer {
+	text-align: center !important;
+	color: #F3F2ED;
+
+}
+
+footer.footer.clearfix p.colophon a {
+	text-align: center !important;
+	color: #F3F2ED;
+	text-decoration: underline;
+}
+ p.colophon  {
+	text-align: center !important;
+	color: #F3F2ED;
+ 	margin-left: auto;
+	margin-right: auto;
+ 	width: 100%;
+ 	display: block;
+ }
+
+img.cover {
+	margin-right: auto!important;
+	margin-left: auto!important;
+	text-align: center!important;
+	min-width: 120px!important;
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+.header {
+
+}
+
 body.pas_surlignable.page_sommaire div.page header.clearfix.header {
-}	  
+
+}
+
+iframe {
+	text-align: center!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	display: block!important;
+	margin-bottom: 20px!important;
+}
 
 
 
+div#documents_joints.bandcamp.menu.documents_joints iframe.bandcampiframe {
+	width: 70% !important;
+	display: block!important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+		margin-bottom: 20px!important;
 
+}
 
 .chapo {
 	font-weight: : normal !important;

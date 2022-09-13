@@ -23,20 +23,22 @@
 
 			<div class="cartouche clearfix">
 				[<p class="#EDIT{surtitre} surtitre">(#SURTITRE)</p>]
-				<h1 class="#EDIT{titre} surlignable entry-title">[(#LOGO_ARTICLE_RUBRIQUE|image_reduire{150,*}) ]#TITRE</h1>
+				<h1 class="#EDIT{titre} surlignable entry-title">#TITRE</h1>
 				[<p class="#EDIT{soustitre} soustitre">(#SOUSTITRE)</p>]
 				<p class="invisible info-publi"><abbr class="published" title="[(#DATE|date_iso)]">[(#DATE|nom_jour) ][(#DATE|affdate)]</abbr>[<span class="sep">, </span><span class="auteurs"><:par_auteur:> (#LESAUTEURS)</span>]</p>
 				[(#REM) Inclure le modele des liens de traductions ]
 				#MODELE{article_traductions}
+
 			</div>
 
-			[<div class="#EDIT{chapo} chapo surlignable">(#CHAPO|image_reduire{672,*})</div>]
+
 			[<div class="#EDIT{texte} texte surlignable clearfix">(#TEXTE|image_reduire{672,*})</div>]
 
 			[<hr /><p class="#EDIT{hyperlien} hyperlien"><:voir_en_ligne:> : <a href="(#URL_SITE)">[(#NOM_SITE|sinon{[(#URL_SITE|couper{80})]})]</a></p>]
 			[<div class="#EDIT{ps} ps surlignable"><hr />(#PS|image_reduire{672,*})</div>]
 
 			[(#INCLURE{fond=inclure/bandcamp,id_article,id_rubrique='',env})]
+			[(#LOGO_ARTICLE_RUBRIQUE|inserer_attribut{class,cover|image_reduire{672,*})]
 
 
 		</div><!--.content-->

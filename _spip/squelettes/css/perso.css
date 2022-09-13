@@ -1,166 +1,183 @@
-/* @override
-	https://audioguid.es/squelettes/css/perso.css?* */
+/* largeur maximum 640px */
 
-body {
-	font-family: ui-monospace,Menlo,Monaco,"Cascadia Mono","Segoe UI Mono","Roboto Mono","Oxygen Mono","Ubuntu Monospace","Source Code Pro","Fira Mono","Droid Sans Mono","Courier New",monospace;
-	color:  #cc002a;
-	background: #F3F2ED;
+@media (max-width: 640px) {
+	.header.clearfix.header {
+		padding: 10px;
+		border-bottom: 2px solid #cc002a;
+	}
+	
+	#slogan {
+		font-size: xx-small!important;
+	}
+	
+	h1.spip_logo_site {
+		font-size: large !important;
+		margin-left: auto!important;
+		margin-right: auto!important;
+		display: inline-block!important;
+		border-style: none!important;
+		border-width: 0!important;
+	}
+	
+	body.pas_surlignable.page_sommaire div.page header.clearfix.header strong.logo_site a img.spip_logo {
+		width: 24px;
+		height: 24px;!
+		important;
+	}
+	
+	div#articles_recents.menu.menu_articles ul li.hentry.clearfix.text-left h3.h2.entry-title.invert.tape {
+		font-size: x-small;
+	}
 }
 
-.page {
-	margin-top: 100px;
+
+.tape a {
+	width: 100%!important;
+	margin-right: auto!important;
+	margin-left: auto!important;
+	display: block!important;
+	color: #F3F2ED;
+}
+
+.tape a span {
+	font-weight: bold !important;
+}
+
+#slogan {
+	display: block;
+	float: left;
+	font-size: small;
+	padding-right: 20px;
+	text-align: right!important;
+	width: 150px
 }
 
 .bandcamp {
-	text-align: center !important;
-	color: #F3F2ED;
 	background: #cc002a;
+	border: 1px outset #fff;
+	color: #F3F2ED;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 20px;
 	margin-top: 20px;
-	border: 1px outset white;
-}
-
-
-.footer {
-	text-align: center !important;
-	color: #F3F2ED;
-	background: #cc002a;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 20px;
-	margin-top: 20px;
-	border: 1px outset white;
-}
-
-a.footer {
-	text-align: center !important;
-	color: #F3F2ED;
-
-}
-
-footer.footer.clearfix p.colophon a {
-	text-align: center !important;
-	color: #F3F2ED;
-	text-decoration: underline;
-}
- p.colophon  {
-	text-align: center !important;
-	color: #F3F2ED;
- 	margin-left: auto;
-	margin-right: auto;
- 	width: 100%;
- 	display: block;
- }
-
-img.cover {
-	margin-right: auto!important;
-	margin-left: auto!important;
-	text-align: center!important;
-	min-width: 120px!important;
-	display: block;
-	clear: both;
-	width: 100%;
-}
-
-.header {
-
-}
-
-body.pas_surlignable.page_sommaire div.page header.clearfix.header {
-
-}
-
-iframe {
-	text-align: center!important;
-	margin-left: auto!important;
-	margin-right: auto!important;
-	display: block!important;
-	margin-bottom: 20px!important;
-}
-
-
-
-div#documents_joints.bandcamp.menu.documents_joints iframe.bandcampiframe {
-	width: 70% !important;
-	display: block!important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-		margin-bottom: 20px!important;
-
+	text-align: center!important
 }
 
 .chapo {
-	font-weight: : normal !important;
+	font-weight: : 400!important
+}
+
+.footer {
+	background: #cc002a;
+	border: 1px outset #fff;
+	color: #F3F2ED;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center!important
+}
+
+.footer {
+	margin-top: 1em!important;
+	padding: 1em!important;
+	text-align: center
+}
+
+.invert {
+	background: #cc002a!important;
+	color: #fcfbf8!important
 }
 
 .invisible {
-	display: none;
+	display: none
+}
+
+.page {
+	margin-top: 100px
+}
+
+.rang span {
+	display: inline-block!important;
+	padding: 0,5em!important;
+	text-decoration: underline!important;
+	text-underline-offset: .2em!important;
+	transform: rotate(90deg)!important
+}
+
+.tape {
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	box-shadow: 2px 2px 2px #d5d5d5;
+	margin-top: 1em!important;
+	padding: 1em!important
 }
 
 .wrapper {
 	clear: both;
 	float: left;
-	width: 100%;
 	overflow: hidden;
+	width: 100%
 }
 
+a.footer {
+	color: #F3F2ED;
+	text-align: center!important
+}
+
+body {
+	background: #F3F2ED;
+	color: #cc002a;
+	font-family: ui-monospace,Menlo,Monaco,"Cascadia Mono","Segoe UI Mono","Roboto Mono","Oxygen Mono","Ubuntu Monospace","Source Code Pro","Fira Mono","Droid Sans Mono","Courier New",monospace
+}
+
+div#documents_joints.bandcamp.menu.documents_joints iframe.bandcampiframe {
+	display: block!important;
+	margin-bottom: 20px!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	width: 70%!important
+}
+
+footer.footer.clearfix a {
+	color: #F3F2ED!important;
+	text-align: center!important;
+	text-decoration: underline
+}
+
+
 h1.spip_logo_site {
-	color: #cc002a !important;
-	text-transform: lowercase;
-	font-weight: normal !important;
-	font-style: normal !important;
-	border-top-style: none;
 	border-bottom-style: none;
 	border-left: 5px solid #cc002a;
 	border-right: 5px solid #cc002a;
-	text-align: center;
-	width: 30%;
+	border-top-style: none;
+	color: #cc002a!important;
+	display: block;
+	float: left;
+	font-style: normal!important;
+	font-weight: 400!important;
 	margin-left: 250px;
-	display: block;
-	float: left;
-}
-
-#slogan {
-	font-size: small;
-	display: inline-block;
-	float: left;
-	display: block;
-	text-align: right!important;
-	padding-right: 20px;
-	width: 150px;
-}
-
-.footer {
-	padding: 1em !important;
-	margin-top: 1em !important;
 	text-align: center;
+	text-transform: lowercase;
+	width: 30%
 }
 
-.tape {
-	padding: 1em !important;
-	margin-top: 1em !important;
-	border-right: 1px solid white;
-	border-bottom: 1px solid white;
-	box-shadow: 2px 2px 2px #d5d5d5;
+iframe {
+	display: block!important;
+	margin-bottom: 20px!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	text-align: center!important
 }
 
-.tape a {
-	color: #fcfbf8 !important;
-	background: #cc002a !important;
-	padding-left: 1em !important;
+img.cover {
+	clear: both;
+	display: block;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	min-width: 120px!important;
+	text-align: center!important;
+	width: 100%
 }
 
-.rang span {
-	transform: rotate(90deg) !important;
-	padding: 0, 5em !important;
-	display: inline-block !important;
-	text-decoration: underline !important;
-	text-underline-offset: 0.2em !important;
-}
 
-.invert {
-	color: #fcfbf8 !important;
-	background: #cc002a !important;
-}

@@ -1,15 +1,7 @@
 <footer class="footer clearfix" role="contentinfo">
-	<ul class="colophon">
 		[(#LOGO_SITE_SPIP|image_reduire{24,24})]
-	</p>
-	<p class="colophon">
 
-		<BOUCLE_annee(ARTICLES){par date}{0,1}>[(#DATE|annee|!={#VAL{Y}|date}|oui)[(#DATE|annee)]]</BOUCLE_annee> - </B_annee> © [(#DATE|annee) ]#NOM_SITE_SPIP
-	 | <a rel="nofollow" href="#URL_PAGE{contact}"><:contact:></a> | <a class="mediabox boxIframe boxWidth-800px boxHeight-800px" rel="nofollow" href="#URL_PAGE{newsletter}"><:newsletter:></a>
-	 </p>
+		<BOUCLE_annee(ARTICLES){par date}{0,1}>[(#DATE|annee|!={#VAL{Y}|date}|oui)[(#DATE|annee)]]</BOUCLE_annee> - </B_annee> © [(#DATE|annee)] #NOM_SITE_SPIP
+	 | <a rel="nofollow" href="#URL_PAGE{contact}">contact</a> | <a rel="nofollow" href="#URL_PAGE{newsletter}">newsletter</a> | <a rel="nofollow" href="https://audioguides.bandcamp.com/">bandcamp</a>
 
-	<li class="colophon">
-	 [(#LOGO_SITE_SPIP|image_reduire{24,24})]</li>
-
-	</ul>
 </footer>

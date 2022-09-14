@@ -1,0 +1,51 @@
+<BOUCLE_principale(RUBRIQUES) {id_rubrique}>
+<!DOCTYPE html>
+<html dir="#LANG_DIR" lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js">
+<head>
+	<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);/*]]>*/</script>
+	<title>[(#TITRE|couper{80}|textebrut) - ][(#NOM_SITE_SPIP|textebrut)]</title>
+	[<meta name="description" content="(#INTRODUCTION{150}|attribut_html)" />]
+	[<link rel="canonical" href="(#URL_RUBRIQUE|url_absolue{#URL_SITE_SPIP})" />]
+	<INCLURE{fond=inclure/head} />
+	[(#REM) Lien vers le flux RSS des articles la rubrique ]
+	<link rel="alternate" type="application/rss+xml" title="<:syndiquer_rubrique:>" href="[(#URL_PAGE{backend}|parametre_url{id_rubrique,#ID_RUBRIQUE})]" />
+</head>
+
+<body class="pas_surlignable page_rubrique">
+<div class="page">
+
+	<INCLURE{fond=inclure/header} />
+	<INCLURE{fond=inclure/nav,env} />
+
+	<main class="main" role="main">
+		[(#REM) Contenu principal : contenu de la rubrique ]
+		<div class="wrapper">
+		<div class="content" id="content">
+			<p class="arbo"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><BOUCLE_ariane(HIERARCHIE){id_rubrique}> &gt; <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a></BOUCLE_ariane>[ &gt; <strong class="on">(#TITRE|couper{80})</strong>]</p><!--.arbo-->
+
+			<div class="cartouche">
+				<h1 class="#EDIT{titre} surlignable">#TITRE</h1>
+			</div>
+
+			[<div class="#EDIT{texte} texte surlignable">(#TEXTE|image_reduire{672,*})</div>]
+
+		<INCLURE{fond=inclure/tapes,env,ajax} />
+
+
+
+			[<div class="notes"><hr />(#NOTES)</div>]
+
+		</div><!--.content-->
+		</div><!--.wrapper-->
+		[(#INCLURE{fond=inclure/bandcamp,id_article,id_rubrique='',env})]
+		[(#LOGO_RUBRIQUE|inserer_attribut{class,cover|image_reduire{672,*})]
+
+
+	</main><!--.main-->
+
+	<INCLURE{fond=inclure/footer,self=#SELF} />
+
+</div><!--.page-->
+</body>
+</html>
+</BOUCLE_principale>
